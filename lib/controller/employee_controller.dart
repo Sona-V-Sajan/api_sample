@@ -6,7 +6,6 @@ import 'package:sampleapi3/model/category_model.dart';
 class HomeScreenController {
   EmployeeModel? modelObj;
   Map<String, dynamic> decodedData = {};
-
   Future getData() async {
     final url = Uri.parse("http://3.92.68.133:8000/api/addemployee/");
     final response = await http.get(url);
